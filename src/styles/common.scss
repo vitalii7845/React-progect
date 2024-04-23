@@ -1,0 +1,66 @@
+.button {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid $gray-color;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.icon-button {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: $white-color;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $main-color;
+  }
+
+  &:active {
+    background: $lines-color;
+  }
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    background: $white-color;
+    padding: 16px;
+    border: 1px solid $gray-color;
+    border-radius: 8px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #cccccc45;
+  z-index: 10;
+}
+
+.popup {
+  &__content {
+    position: absolute;
+    background: $white-color;
+    padding: 16px;
+    border: 1px solid $gray-color;
+    border-radius: 8px;
+  }
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,26 @@
+.navigation {
+  &__today-btn {
+    margin-left: 32px;
+    padding: 0 15px;
+    background: $white-color;
+    border: 1px solid $lines-color;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #f1f3f4;
+    }
+
+    &:active {
+      background-color: #0000001f;
+    }
+  }
+
+  &__nav-icon {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  &__displayed-month {
+    margin-left: 10px;
+  }
+}

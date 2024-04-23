@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  height: 60px;
+  padding: 0 10px;
+  align-items: center;
+  border-bottom: 1px solid $lines-color;
+
+  &__title {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  &__title-text {
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: normal;
+  }
+
+  &__logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
+
+  &__user {
+    margin-left: auto;
+  }
+}
+
+.create-event-btn {
+  width: 40px;
+  height: 40px;
+  background: $white-color;
+  border: none;
+  border-radius: 50%;
+  box-shadow: $btn-shadow;
+  font-size: 24px;
+  line-height: 40px;
+  color: $orange-color;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+
+  &:hover {
+    box-shadow: $btn-shadow-hover;
+  }
+
+  &:active {
+    background: $lines-color;
+  }
+}
+
+.react {
+  &__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
