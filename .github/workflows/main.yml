@@ -1,5 +1,4 @@
 # help bild
-
 name: calendar
 
 # Controls when the workflow will run
@@ -10,17 +9,17 @@ branches: [ "master" ]
 workflow_dispatch:
 
 jobs:
-  bild:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      -uses: actions/checkout@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
 
-    
-    - name: Install dependencies
-      run: npn run ci
-
-    - name: Build the app
-      run: npm run build
+      - name: Install  🔧 
+          run: npm run ci
+ 
+      - name: Build the app
+          run: npm run build
 
        - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
